@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Fair</title>
+</head>
+
+<body class="bloody-background">
+  <h1>ALL IN ONE PHYSICS</h1>
+  <h2>Introduction to Physics</h2>
+  <h2> Physics and Human Society: The Mission of Physics and Career Awareness </h2>
+  <h2><b>Typical careers in physics</b></h2>
+  <ul>
+    <li>Space and Astronomy</li>
+    <li> HealthCare</li>
+    <li>Metrology careers</li>
+    <li>Engineering</li>
+    <li>Research scientist</li>
+  </ul>
+  <h2><b>Current Status of Physics</b></h2>
+  <h3> Recent Discoveries:</h3>
+  <ul>
+    <li> Discovery of Exoplanets</li>
+    <li> Black hole</li>
+    <li> Quantum Cryptography</li>
+  </ul>
+  <h1> Vectors</h1>
+  <h2> Types of Vectors</h2>
+  <ul>
+    <li> Parallel Vectors</li>
+    <li> Equal Vectors</li>
+    <li>Collinear Vectors</li>
+    <li> Zero Vector </li>
+    <li> Orthogonal Vector</li>
+    <li> Co-planar Vector</li>
+    <li>Unit Vector</li>
+  </ul>
+  <!-- Dot Product -->
+  <div class="container">
+    <h1>Dot product of Vectors</h1>
+    <p>Hello, Welcome to the dot product calculator!</p>
+    <p>The scalar product of two vectors a and b of magnitude |a| and |b| is given as |a||b| cos θ, where θ represents
+      the angle between the vectors a and b taken in the direction of the vectors.</p>
+    <div>
+      <label for="Magnitude1"> Enter magnitude of the first vector:</label>
+      <input type="number" id="Magnitude1">
+    </div>
+    <div>
+      <label for="Magnitude2"> Enter magnitude of second vector:</label>
+      <input type="number" id="Magnitude2">
+    </div>
+    <div>
+      <label for="Costheta">Enter cosine of the angle:</label>
+      <input type="number" id="Costheta">
+    </div>
+    <div>
+      <label for="Answer">Resulting dot product:</label>
+      <span id="Dotproduct">0</span>
+    </div>
+    <button onclick="calculateDotProduct()">Calculate</button>
+  </div>
+
+  <!-- potential energy -->
+  <div class="container">
+    <h1>Potential Energy</h1>
+    <p>Potential energy is a type of energy that is stored in an object due to its position relative to other objects.
+    </p>
+    <p> PE = mgh</p>
+    <div>
+      <label for="mass"> Enter mass of body (kg):</label>
+      <input type="number" id="mass">
+    </div>
+    <div>
+      <label for="height"> Enter height of body (m):</label>
+      <input type="number" id="height">
+    </div>
+    <div>
+      <label for="gravitational_force">Enter acceleration due to gravity (m/s^2):</label>
+      <input type="number" id="gravitational_force">
+    </div>
+    <div>
+      <label for="PEresult">Resulting Potential Energy:</label>
+      <span id="PEresult">0</span>
+    </div>
+    <button onclick="PECalculator()">Calculate</button>
+  </div>
+
+  <!-- collision -->
+  <div class="container">
+    <h1>Collision Calculator</h1>
+    <p>Hello, welcome to the Collision Calculator! Enjoy calculating various types of collisions.</p>
+    <p>Please enter the masses and velocities of the bodies below:</p>
+    <div>
+      <label for="mass1">Mass of Body 1 (kg):</label>
+      <input type="number" id="mass1">
+    </div>
+    <div>
+      <label for="velocity1">Velocity of Body 1 (m/s):</label>
+      <input type="number" id="velocity1">
+    </div>
+    <div>
+      <label for="mass2">Mass of Body 2 (kg):</label>
+      <input type="number" id="mass2">
+    </div>
+    <div>
+      <label for="velocity2">Velocity of Body 2 (m/s):</label>
+      <input type="number" id="velocity2">
+    </div>
+    <div>
+      <label for="result">Resulting Momentum:</label>
+      <span id="result">0</span>
+    </div>
+    <button onclick="calculateCollision()">Calculate</button>
+  </div>
+
+  <!-- TemperatureConvertor -->
+  <div class="container">
+    <h1>Temperature Calculator</h1>
+    <label for="celsius">Celsius:</label>
+    <input type="number" id="celsius" oninput="calculateTemperature()">
+    <br>
+    <label for="fahrenheit">Fahrenheit:</label>
+    <input type="number" id="fahrenheit" oninput="calculateTemperature()">
+    <br>
+    <label for="tempResult">Result:</label>
+    <span id="tempResult"></span>
+  </div>
+  <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
